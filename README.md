@@ -15,7 +15,7 @@ To generate the server side stubs :
 3. Build the project using "mvn package"
 4. From this project location. generate the server stubs using the below command
 
-java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i https://<<appname>>/api-docs/swagger.json  -l scalatra  -o ../scala-employee-service-server
+java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i https://<<appname>>/api-docs/swagger.json  -l scalatra  -o ../<<outputprojectlocation>>
 
 where -l denotes the language for the reference implementation (Scalatra = Scala + Sinatra)
       -o denotes the output folder where the server stubs get generated
